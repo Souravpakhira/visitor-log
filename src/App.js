@@ -15,6 +15,10 @@ function App() {
         <Navbar />
           <Log />
         </Route>
+        <Route path="/news">
+        <Navbar />
+          <News />
+        </Route>
       </Switch>
     </div>
   );

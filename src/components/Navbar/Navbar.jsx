@@ -5,7 +5,7 @@ const navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             VisitorLog
           </a>
           <button
@@ -27,7 +27,7 @@ const navbar = () => {
               <a className="nav-link" href="/Log">
                 Visitor Log
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/news">
                 Latest News
               </a>
               
