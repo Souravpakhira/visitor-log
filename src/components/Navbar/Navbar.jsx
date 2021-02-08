@@ -1,6 +1,7 @@
 import React from "react";
 
-const navbar = () => {
+const navbar = (props) => {
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,13 +22,13 @@ const navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a className={props.status == "form" ? "nav-link active" :"nav-link"} aria-current="page" href="/">
                 Home
               </a>
-              <a className="nav-link" href="/Log">
+              <a className={props.status == "log" ? "nav-link active" :"nav-link"} href="/Log">
                 Visitor Log
               </a>
-              <a className="nav-link" href="/news">
+              <a className={props.status == "news" ? "nav-link active" :"nav-link"} href="/news">
                 Latest News
               </a>
               
