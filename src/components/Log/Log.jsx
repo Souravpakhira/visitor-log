@@ -3,7 +3,6 @@ import React from "react";
 const Log = () => {
   let Lists = [];
   Lists = JSON.parse(localStorage.getItem("Logs"));
-  console.log(Lists);
 
   return (
     <div>
@@ -22,7 +21,7 @@ const Log = () => {
           </tr>
         </thead>
         <tbody>
-          {Lists.map((list, index) => {
+          {Lists && Lists.map((list, index) => {
             const rw =  <tr>
               <th scope="row">{index+1}</th>
               <td>{list.Name}</td>
